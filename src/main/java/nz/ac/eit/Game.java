@@ -43,4 +43,11 @@ public class Game {
         return dealer.getHandValue() > maxHandValue;
     }
 
+    //Adds 2 numbers to players handvalue (rolls dice)
+    public void addValues(){
+        for(int i = 0; i > dice.size();i++){
+            player.handValue += dice.get(i).rollDie();
+        }
+    }
+
 }
