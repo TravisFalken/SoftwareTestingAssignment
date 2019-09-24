@@ -3,6 +3,7 @@ package nz.ac.eit;
 /**
  * Hello world!
  * hi
+ * hi
  */
 public class App 
 {
