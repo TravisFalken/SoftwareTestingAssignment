@@ -10,6 +10,4 @@ public class Dealer extends Player {
     public boolean canBet(){
         return handValue < houseLimit; //returns true if hand value is less than
     }
-
-
 }
