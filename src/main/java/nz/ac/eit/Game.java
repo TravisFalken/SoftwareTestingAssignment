@@ -1,5 +1,6 @@
 package nz.ac.eit;
 
+
 import java.util.ArrayList;
 
 public class Game {
@@ -50,7 +51,7 @@ public class Game {
             player.handValue += dice.get(i).rollDie();
         }
     }
-
+//hi
     //Checks for who wins if both players are holding
     public int determineWin() {
         if (!checkPlayerBust() && !checkDealerBust()) {
