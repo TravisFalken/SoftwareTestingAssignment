@@ -64,9 +64,9 @@ public class Game {
     public void addValues(boolean Isplayer){
         for(int i = 0; i < dice.size();i++){
             if(Isplayer == true){
-                player.handValue += dice.get(i).rollDie();
+                player.setHandValue(player.getHandValue() + dice.get(i).rollDie());
             } else{
-                dealer.handValue += dice.get(i).rollDie();
+                dealer.setHandValue(dealer.getHandValue() + dice.get(i).rollDie());
             }
 
         }

@@ -44,15 +44,22 @@ public class App
             if (userinput.equalsIgnoreCase("hit")) {
                 MainGame.addValues(true);
                 if(MainGame.checkPlayerBust()){
-                    //
+                    System.out.println("Your dice rolled: " + MainGame.getPlayer().handValue + "\n" +"Computer rolled: " +  MainGame.getDealer().getHandValue());
+                    System.out.println(MainGame.DealerWin());
+                    end = true;
                 } else if(MainGame.checkDealerBust()) {
-                    //
+                    System.out.println("Your dice rolled: " + MainGame.getPlayer().handValue + "\n" +"Computer rolled: " +  MainGame.getDealer().getHandValue());
+                    System.out.println(MainGame.PlayerWin());
+                    end = true;
                 }
             } else if (userinput.equalsIgnoreCase("hold")) {
                 if(MainGame.determineWin() == 1) {
-                    System.out.println("You win!");
-                } else {
-                    System.out.println("You lose!");
+                    System.out.println(MainGame.PlayerWin());
+                    end = true;
+
+                } else if (MainGame.determineWin() == 0) {
+                    System.out.println(MainGame.DealerWin());
+                    end = true;
                 }
             } else {
                 System.out.println("Please only enter 'hit' or 'hold'");
@@ -60,12 +67,7 @@ public class App
             }
 
 
-
         }
-
-
-
-
 
     }
 }

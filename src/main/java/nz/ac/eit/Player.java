@@ -34,6 +34,10 @@ public class Player {
         return handValue;
     }
 
+    public void setHandValue(int handValue) {
+        this.handValue = handValue;
+    }
+
     public void increaseHandValue(int roundScore) {
         this.handValue = roundScore;
     }
