@@ -4,7 +4,7 @@ package nz.ac.eit;
 import java.util.ArrayList;
 
 public class Game {
-    private static final int numOfDice = 3; //Set the number of dice a game can have
+    private static final int numOfDice = 2; //Set the number of dice a game can have
     private static final int maxHandValue = 21; //The max hand value a player or dealer can have before going bust
     private Player player; //The player playing the game
     private Dealer dealer; //The dealer versing the player
@@ -60,7 +60,7 @@ public class Game {
 
         }
     }
-//hi
+
     //Checks for who wins if both players are holding
     public int determineWin() {
         if (!checkPlayerBust() && !checkDealerBust()) {
@@ -73,4 +73,5 @@ public class Game {
         }
         return -1;
     }
+
 }

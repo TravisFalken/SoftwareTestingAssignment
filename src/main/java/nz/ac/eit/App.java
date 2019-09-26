@@ -28,9 +28,7 @@ public class App
                System.out.println("Error player not created");
                end = true;
            }
-           Player user = MainGame.getPlayer();
-           Computer.resetHandValue().rollDie()
-           System.out.println("Your dice rolled: " +  + "Computer rolled: " + );
+           Player User = MainGame.getPlayer();
 
 
 
@@ -38,8 +36,14 @@ public class App
 
 
         }
+        System.out.println("Would you like to hit or hold? Please enter 'hit' or 'hold'");
+        userinput = sc.nextLine();
+        if (userinput.equalsIgnoreCase("hit")) {
 
 
+        } else if (userinput.equalsIgnoreCase("hold")) {
+            //determine winner
+        }
 
 
 
