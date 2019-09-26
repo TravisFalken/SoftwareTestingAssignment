@@ -28,8 +28,10 @@ public class App
                System.out.println("Error player not created");
                end = true;
            }
+           Player user = MainGame.getPlayer();
+           Computer.resetHandValue().rollDie()
+           System.out.println("Your dice rolled: " +  + "Computer rolled: " + );
 
-           Player User = MainGame.getPlayer();
 
 
 

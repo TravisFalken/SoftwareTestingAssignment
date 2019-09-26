@@ -50,9 +50,14 @@ public class Game {
     }
 
     //Adds 2 numbers to players handvalue (rolls dice)
-    public void addValues(){
+    public void addValues(boolean Isplayer){
         for(int i = 0; i > dice.size();i++){
-            player.handValue += dice.get(i).rollDie();
+            if(Isplayer == true){
+                player.handValue += dice.get(i).rollDie();
+            } else{
+                dealer.handValue += dice.get(i).rollDie();
+            }
+
         }
     }
 //hi
