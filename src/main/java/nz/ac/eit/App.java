@@ -39,9 +39,25 @@ public class App
            System.out.println("Your dice rolled: " + MainGame.getPlayer().handValue + "\n" +"Computer rolled: " +  MainGame.getDealer().getHandValue());
 
 
-
-
-
+            System.out.println("Would you like to hit or hold? Please enter 'hit' or 'hold'");
+            userinput = sc.nextLine();
+            if (userinput.equalsIgnoreCase("hit")) {
+                MainGame.addValues(true);
+                if(MainGame.checkPlayerBust()){
+                    //
+                } else if(MainGame.checkDealerBust()) {
+                    //
+                }
+            } else if (userinput.equalsIgnoreCase("hold")) {
+                if(MainGame.determineWin() == 1) {
+                    System.out.println("You win!");
+                } else {
+                    System.out.println("You lose!");
+                }
+            } else {
+                System.out.println("Please only enter 'hit' or 'hold'");
+                end = true;
+            }
 
         }
 

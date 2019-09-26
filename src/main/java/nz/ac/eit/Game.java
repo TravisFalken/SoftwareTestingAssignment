@@ -67,7 +67,7 @@ public class Game {
 
     //Checks for who wins if both players are holding
     public int determineWin() {
-        if (!checkPlayerBust() && !checkDealerBust()) {
+        if (!checkPlayerBust() || !checkDealerBust()) {
             if (player.getHandValue() > dealer.getHandValue()) {
                 return 1;
             } else if (player.getHandValue() == dealer.getHandValue()) {
