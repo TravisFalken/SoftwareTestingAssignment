@@ -74,15 +74,15 @@ public class Game {
 //hi
     //Checks for who wins if both players are holding
     public int determineWin() {
-        if (!checkPlayerBust() || !checkDealerBust()) {
+
             if (player.getHandValue() > dealer.getHandValue()) {
                 return 1;
             } else if (player.getHandValue() == dealer.getHandValue()) {
                 return 0;
             }
             return 0;
-        }
-        return -1;
+
+
     }
 
     public String PlayerWin(){
@@ -93,5 +93,16 @@ public class Game {
     public String DealerWin(){
         addComputerGameScore();
         return "You lose. Your Score: " + player.getGameScore() + " Computer Score: " + dealer.getGameScore();
+    }
+
+    public int Hit21(){
+        if(player.getHandValue() == 21){
+            return 1;
+
+        } else if(dealer.getHandValue() == 21){
+            return 0;
+        } else{
+            return -1;
+        }
     }
 }
