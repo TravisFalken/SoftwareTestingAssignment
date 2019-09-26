@@ -22,6 +22,10 @@ public class Game {
         return player;
     }
 
+    public Dealer getDealer() {
+        return dealer;
+    }
+
     //creates the dice
     private void createDice(){
         for(int i = 0; i <= numOfDice; i++){
@@ -51,7 +55,7 @@ public class Game {
 
     //Adds 2 numbers to players handvalue (rolls dice)
     public void addValues(boolean Isplayer){
-        for(int i = 0; i > dice.size();i++){
+        for(int i = 0; i < dice.size();i++){
             if(Isplayer == true){
                 player.handValue += dice.get(i).rollDie();
             } else{
