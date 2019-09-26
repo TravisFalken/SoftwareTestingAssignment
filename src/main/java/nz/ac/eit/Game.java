@@ -18,6 +18,10 @@ public class Game {
         dealer = new Dealer();
     }
 
+    public Player getPlayer() {
+        return player;
+    }
+
     //creates the dice
     private void createDice(){
         for(int i = 0; i <= numOfDice; i++){

@@ -1,5 +1,7 @@
 package nz.ac.eit;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  * hi
@@ -7,8 +9,37 @@ package nz.ac.eit;
  */
 public class App 
 {
+
+
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Game MainGame = new Game();
+        Dealer Computer = new Dealer();
+        Die Dice = new Die();
+        Scanner sc = new Scanner(System.in);
+        String userinput = "";
+        boolean end = false;
+        while(end == false){
+           System.out.println("Welcome to BlackJack! Please enter a username: ");
+           userinput = sc.nextLine();
+           if(MainGame.createPlayer(userinput)) {
+                System.out.println("Player created!");
+           }else{
+               System.out.println("Error player not created");
+               end = true;
+           }
+
+           Player User = MainGame.getPlayer();
+
+
+
+
+
+        }
+
+
+
+
+
     }
 }
