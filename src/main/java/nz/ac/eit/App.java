@@ -19,31 +19,33 @@ public class App
         Scanner sc = new Scanner(System.in);
         String userinput = "";
         boolean end = false;
-        while(end == false){
-           System.out.println("Welcome to BlackJack! Please enter a username: ");
-           userinput = sc.nextLine();
-           if(MainGame.createPlayer(userinput)) {
-                System.out.println("Player created!");
-           }else{
-               System.out.println("Error player not created");
-               end = true;
-           }
-           Player User = MainGame.getPlayer();
-
-
-
-
-
-
-        }
-        System.out.println("Would you like to hit or hold? Please enter 'hit' or 'hold'");
+        //welcomes and creates player
+        System.out.println("Welcome to BlackJack! Please enter a username: ");
         userinput = sc.nextLine();
-        if (userinput.equalsIgnoreCase("hit")) {
+        if(MainGame.createPlayer(userinput)) {
+            System.out.println("Player created!");
+        }else{
+            System.out.println("Error player not created");
 
-
-        } else if (userinput.equalsIgnoreCase("hold")) {
-            //determine winner
         }
+
+
+        while(end == false){
+
+           //rolls dice for player and added to hand value
+           MainGame.addValues(true);
+            //rolls dice for dealer and added to hand value
+            MainGame.addValues(false);
+           System.out.println("Your dice rolled: " + MainGame.getPlayer().handValue + "\n" +"Computer rolled: " +  MainGame.getDealer().getHandValue());
+
+
+
+
+
+
+        }
+
+
 
 
 
