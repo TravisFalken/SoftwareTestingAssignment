@@ -26,6 +26,10 @@ public class Player {
         return gameScore;
     }
 
+    public void setGameScore(int gameScore) {
+        this.gameScore = gameScore;
+    }
+
     public int getHandValue() {
         return handValue;
     }

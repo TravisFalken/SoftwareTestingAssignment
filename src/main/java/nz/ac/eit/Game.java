@@ -53,6 +53,13 @@ public class Game {
         return dealer.getHandValue() > maxHandValue;
     }
 
+    public void addGameScore(){
+        player.setGameScore(player.getGameScore() + 1);
+    }
+
+    public void addComputerGameScore(){
+        dealer.setGameScore(dealer.getGameScore() + 1);
+    }
     //Adds 2 numbers to players handvalue (rolls dice)
     public void addValues(boolean Isplayer){
         for(int i = 0; i < dice.size();i++){
@@ -64,7 +71,7 @@ public class Game {
 
         }
     }
-
+//hi
     //Checks for who wins if both players are holding
     public int determineWin() {
         if (!checkPlayerBust() || !checkDealerBust()) {
@@ -78,4 +85,13 @@ public class Game {
         return -1;
     }
 
+    public String PlayerWin(){
+        addGameScore();
+        return "You Win. Your Score: " + player.getGameScore() + " Computer Score: " + dealer.getGameScore();
+    }
+
+    public String DealerWin(){
+        addComputerGameScore();
+        return "You lose. Your Score: " + player.getGameScore() + " Computer Score: " + dealer.getGameScore();
+    }
 }
