@@ -13,7 +13,7 @@ public class Player {
     public void setUserName(String userName){
         if(userName != ""){
             this.userName = userName;
-        }else {
+        } else {
             this.userName = "player1";//Default user name
         }
     }
@@ -51,5 +51,4 @@ public class Player {
 //    public void resetHandValue(){
 //        this.handValue = 0;
 //    }
-
 }

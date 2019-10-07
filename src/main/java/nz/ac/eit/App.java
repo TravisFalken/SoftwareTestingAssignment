@@ -34,13 +34,12 @@ public class App
         //rolls dice for player and added to hand value
         MainGame.addValues(true);
         //rolls dice for dealer and added to hand value
-
-            MainGame.addValues(false);
+        MainGame.addValues(false);
 
         while(end == false){
 
 
-            System.out.println("dice rolled:" + MainGame.getPlayer().getHandValue() + "\n" + "Computer rolled: " +  MainGame.getDealer().getHandValue());
+            System.out.println("Your dice rolled:" + MainGame.getPlayer().getHandValue() + "\n" + "Computer rolled: " +  MainGame.getDealer().getHandValue());
 
 
 
@@ -89,23 +88,19 @@ public class App
 
                         end = true;
                     }
-                }else{
+                } else {
                     if(MainGame.checkDealerBust()){
                         System.out.println(MainGame.PlayerWin());
-                        end=true;
+                        end = true;
                     } else if(MainGame.checkPlayerBust()){
                         System.out.println(MainGame.DealerWin());
                         end = true;
                     }
                 }
-
             } else {
                 System.out.println("Please only enter 'hit' or 'hold'");
                 end = true;
             }
-
-
         }
-
     }
 }

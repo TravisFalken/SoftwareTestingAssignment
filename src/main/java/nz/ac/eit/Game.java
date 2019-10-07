@@ -30,7 +30,7 @@ public class Game {
         return dealer;
     }
 
-    //creates the dice
+    //Creates the dice
     private void createDice(){
         for(int i = 0; i <= numOfDice; i++){
             Die newDie = new Die();
@@ -47,12 +47,12 @@ public class Game {
         return false;
     }
 
-    //returns true if player is bust
+    //Returns true if player is bust
     public boolean checkPlayerBust(){
         return player.getHandValue() > maxHandValue;
     }
 
-    //returns true if dealer is bust
+    //Returns true if dealer is bust
     public boolean checkDealerBust(){
         return dealer.getHandValue() > maxHandValue;
     }
@@ -79,30 +79,29 @@ public class Game {
 
     //Checks for who wins if both players are holding
     public int determineWin() {
-
-            if (player.getHandValue() > dealer.getHandValue()) {
-                return 1;
-            } else if (player.getHandValue() == dealer.getHandValue()) {
-                return 0;
-            }
+        if (player.getHandValue() > dealer.getHandValue()) {
+            return 1;
+        } else if (player.getHandValue() == dealer.getHandValue()) {
             return 0;
-
-
+        }
+        return 0;
     }
 
+    //Display player win string
     public String PlayerWin(){
-        return "You Win";
+        return "You win.";
     }
 
+    //Display dealer win string
     public String DealerWin(){
         //addComputerGameScore();
-        return "You lose";
+        return "You lose.";
     }
 
+    //Checks for player hitting 21
     public int Hit21(){
         if(player.getHandValue() == 21){
             return 1;
-
         } else if(dealer.getHandValue() == 21){
             return 0;
         } else{
