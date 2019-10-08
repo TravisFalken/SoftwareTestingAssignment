@@ -11,10 +11,10 @@ public class Player {
 
     //Sets the user name
     public void setUserName(String userName){
-        if(userName != ""){
-            this.userName = userName;
+        if(userName.equalsIgnoreCase("")){
+            this.userName = "Player 1";//Default user name
         } else {
-            this.userName = "player1";//Default user name
+            this.userName = userName;
         }
     }
 
