@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5fa5bf7c-a54a-4bc4-9dd3-ca45c1535693" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nz/ac/eit/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/ac/eit/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nz/ac/eit/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/ac/eit/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/nz/ac/eit/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/nz/ac/eit/AppTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +45,28 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jackBlack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nz.ac.eit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nz.ac.eit" />
+      <option name="MAIN_CLASS_NAME" value="nz.ac.eit.GameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GameTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />

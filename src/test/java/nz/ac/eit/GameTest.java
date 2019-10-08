@@ -114,14 +114,14 @@ public class GameTest {
     public void gameTest_PlayerWin_String(){
 
         String result = game.PlayerWin();
-        assertEquals("Should have returned 'You Win' but didnt","You Win",result);
+        assertEquals("Should have returned 'You Win' but didnt","You Win.",result);
     }
 
     @Test
     public void gameTest_DealerWin_String(){
 
         String result = game.DealerWin();
-        assertEquals("Should have returned 'You lose' but didnt","You lose",result);
+        assertEquals("Should have returned 'You lose' but didnt","You lose.",result);
     }
 
     @Test
