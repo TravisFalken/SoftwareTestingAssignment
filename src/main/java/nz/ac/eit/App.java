@@ -99,7 +99,6 @@ public class App
                 }
             } else {
                 System.out.println("Please only enter 'hit' or 'hold'");
-                end = true;
             }
         }
     }
