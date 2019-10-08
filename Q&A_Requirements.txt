@@ -1,0 +1,22 @@
+Requirements Q&A with Customer
+
+Q: When the application is started would you like the game to immediately roll the dice?
+A: No, I would like the game to first introduce the user to the game with a welcome message.
+
+Q: Would you like the user to be able to create a player with a name? 
+A: Yes, I would like that feature to be added in.
+
+Q: If the user does not enter a name would you like the default name to just be “player1” or to ask the player to enter a name in?
+A: I prefer the default name, it will make the experience a lot more fluid.
+
+Q: would you like the user to play with two dice or one die?
+A: I would like the player to play with two dice.
+
+Q: Would you want a feature where the player is able to split?
+A: No, I just want a very simple black jack game where the player can either “HIT” or “STAY”.
+
+Q: Will the dealer have a house rule where they can not hit if their hand value is 17 or greater?
+A: Yes, I want the dealer to follow that house rule.
+
+Q: if the player is closest to 21 without going over and effectively wins the game and a display message tells them that they have won would you like the player to have the option to play again?
+A: No, I just want it to be a straight forward for now and I want to see the concept working so I would like the game to stop after the player wins.
