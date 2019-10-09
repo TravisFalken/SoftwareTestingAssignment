@@ -39,7 +39,7 @@ public class App
         while(end == false){
 
 
-            System.out.println("Your dice rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
+            System.out.println("You rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
                     "\n" + "Computer rolled: " +  MainGame.getDealerRollValue() + ". Computers hand value: " + MainGame.getDealer().getHandValue());
 
 
@@ -52,24 +52,24 @@ public class App
                     MainGame.addValues(false);
                 }
                 if(MainGame.checkPlayerBust()){
-                    System.out.println("Your dice rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
+                    System.out.println("You rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
                             "\n" + "Computer rolled: " +  MainGame.getDealerRollValue() + ". Computers hand value: " + MainGame.getDealer().getHandValue());
                     System.out.println(MainGame.DealerWin());
                     end = true;
                 } else if(MainGame.checkDealerBust()) {
-                    System.out.println("Your dice rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
+                    System.out.println("You rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
                             "\n" + "Computer rolled: " +  MainGame.getDealerRollValue() + ". Computers hand value: " + MainGame.getDealer().getHandValue());
                     System.out.println(MainGame.PlayerWin());
                     end = true;
                 }
                if(MainGame.Hit21() == 1){
-                   System.out.println("Your dice rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
+                   System.out.println("You rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
                            "\n" + "Computer rolled: " +  MainGame.getDealerRollValue() + ". Computers hand value: " + MainGame.getDealer().getHandValue());
                    System.out.println(MainGame.PlayerWin());
                    end = true;
                }
                 if(MainGame.Hit21() == 0){
-                    System.out.println("Your dice rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
+                    System.out.println("You rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
                             "\n" + "Computer rolled: " +  MainGame.getDealerRollValue() + ". Computers hand value: " + MainGame.getDealer().getHandValue());
                     System.out.println(MainGame.DealerWin());
                     end = true;
@@ -83,14 +83,14 @@ public class App
                 if(!MainGame.checkPlayerBust() && !MainGame.checkDealerBust()) {
                     if (MainGame.determineWin() == 1) {
                         System.out.println(MainGame.PlayerWin());
-                        System.out.println("Your dice rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
+                        System.out.println("You rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
                                 "\n" + "Computer rolled: " +  MainGame.getDealerRollValue() + ". Computers hand value: " + MainGame.getDealer().getHandValue());
 
                         end = true;
 
                     } else if (MainGame.determineWin() == 0) {
                         System.out.println(MainGame.DealerWin());
-                        System.out.println("Your dice rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
+                        System.out.println("You rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
                                 "\n" + "Computer rolled: " +  MainGame.getDealerRollValue() + ". Computers hand value: " + MainGame.getDealer().getHandValue());
 
                         end = true;
