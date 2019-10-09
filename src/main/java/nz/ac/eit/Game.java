@@ -41,7 +41,7 @@ public class Game {
 
     //Creates the dice
     private void createDice(){
-        for(int i = 0; i <= numOfDice; i++){
+        for(int i = 0; i < numOfDice; i++){
             Die newDie = new Die();
             dice.add(newDie);
         }
@@ -86,7 +86,7 @@ public class Game {
     //Returns player's dice value
     public int playerDiceValue() {
         playerRollValue = 0;
-        for(int i = 0; i < dice.size();i++) {
+        for(int i = 0; i < dice.size(); i++) {
             playerRollValue += dice.get(i).rollDie();
         }
         return playerRollValue;

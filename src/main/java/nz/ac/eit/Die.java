@@ -12,7 +12,7 @@ public class Die {
 
     //Roll the die and return the value of the roll
     public int rollDie(){
-        return randomDieNumber.nextInt((maxNumber - 1)) + 1; //Find a random number between (1 - maxNumber)
+        return randomDieNumber.nextInt((maxNumber)) + 1; //Find a random number between (1 - maxNumber)
     }
 }
 

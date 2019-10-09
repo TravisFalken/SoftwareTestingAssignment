@@ -21,6 +21,7 @@ public class App
         Scanner sc = new Scanner(System.in);
         String userinput = "";
         boolean end = false;
+
         //welcomes and creates player
         System.out.println("Welcome to BlackJack! Please enter a username: ");
         userinput = sc.nextLine();
@@ -82,16 +83,15 @@ public class App
                 }
                 if(!MainGame.checkPlayerBust() && !MainGame.checkDealerBust()) {
                     if (MainGame.determineWin() == 1) {
+                        System.out.println("Your hand value: " + MainGame.getPlayer().getHandValue() +
+                                "\n" + "Computers hand value: " + MainGame.getDealer().getHandValue());
                         System.out.println(MainGame.PlayerWin());
-                        System.out.println("You rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
-                                "\n" + "Computer rolled: " +  MainGame.getDealerRollValue() + ". Computers hand value: " + MainGame.getDealer().getHandValue());
-
                         end = true;
 
                     } else if (MainGame.determineWin() == 0) {
+                        System.out.println("Your hand value: " + MainGame.getPlayer().getHandValue() +
+                                "\n" + "Computers hand value: " + MainGame.getDealer().getHandValue());
                         System.out.println(MainGame.DealerWin());
-                        System.out.println("You rolled: " + MainGame.getPlayerRollValue() + ". Your hand value: " + MainGame.getPlayer().getHandValue() +
-                                "\n" + "Computer rolled: " +  MainGame.getDealerRollValue() + ". Computers hand value: " + MainGame.getDealer().getHandValue());
 
                         end = true;
                     }
