@@ -10,7 +10,8 @@ public class Game {
     private Dealer dealer; //The dealer versing the player
     private boolean playerTurn = true; //if true its the players turn to hit or stay
     ArrayList<Die> dice;
-
+    private int playerRollValue = 0;
+    private int dealerRollValue = 0;
 
     public Game(){
         dice = new ArrayList<Die>();
@@ -28,6 +29,14 @@ public class Game {
 
     public Dealer getDealer() {
         return dealer;
+    }
+
+    public int getPlayerRollValue() {
+        return playerRollValue;
+    }
+
+    public int getDealerRollValue() {
+        return dealerRollValue;
     }
 
     //Creates the dice
@@ -67,14 +76,29 @@ public class Game {
 
     //Adds 2 numbers to players handvalue (rolls dice)
     public void addValues(boolean Isplayer){
-        for(int i = 0; i < dice.size();i++){
-            if(Isplayer == true){
-                player.setHandValue(player.getHandValue() + dice.get(i).rollDie());
-            } else{
-                dealer.setHandValue(dealer.getHandValue() + dice.get(i).rollDie());
-            }
-
+        if(Isplayer == true){
+            player.setHandValue(player.getHandValue() + playerDiceValue());
+        } else{
+            dealer.setHandValue(dealer.getHandValue() + dealerDiceValue());
         }
+    }
+
+    //Returns player's dice value
+    public int playerDiceValue() {
+        playerRollValue = 0;
+        for(int i = 0; i < dice.size();i++) {
+            playerRollValue += dice.get(i).rollDie();
+        }
+        return playerRollValue;
+    }
+
+    //Returns dealer's dice value
+    public int dealerDiceValue() {
+        dealerRollValue = 0;
+        for(int i = 0; i < dice.size();i++) {
+            dealerRollValue += dice.get(i).rollDie();
+        }
+        return dealerRollValue;
     }
 
     //Checks for who wins if both players are holding
