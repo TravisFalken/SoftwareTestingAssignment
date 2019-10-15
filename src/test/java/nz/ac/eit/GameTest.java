@@ -61,16 +61,24 @@ public class GameTest {
     }
 
     @Test
-    public void gameTest_AddValues_Player_HandValueNot0(){
+    public void gameTest_AddValues_Player_Turn_HandValueNot0() {
         game.getPlayer().setHandValue(0);
         game.addValues(true);
         int value = game.getPlayer().getHandValue();
         boolean result = false;
-        if(value != 0){
+        if (value != 0) {
             result = true;
         }
         assertTrue("DealerHand has been dealt to but is still 0", result);
 
+    }
+
+    @Test
+    public void gameTest_AddValues_Not_PlayerTurn_HandValue0(){
+        game.getPlayer().setHandValue(0);
+        game.addValues(false);
+        int value = game.getPlayer().getHandValue();
+        assertEquals("Player Hand value should remain 0 but did not ", 0, value);
     }
 
     @Test

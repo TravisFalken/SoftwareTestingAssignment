@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fa5bf7c-a54a-4bc4-9dd3-ca45c1535693" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nz/ac/eit/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/ac/eit/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nz/ac/eit/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nz/ac/eit/Game.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,10 +122,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.DealerTest" />
         <item itemvalue="JUnit.DieTest" />
-        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.DealerTest" />
+        <item itemvalue="JUnit.PlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +168,28 @@
       <option name="project" value="LOCAL" />
       <updated>1570497894718</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed bug where user does not enter hit or stay and it would just end the game">
+      <created>1570506880330</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570506880330</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added test to test if player hand can increase if it is not the players turn">
+      <created>1570680369580</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570680369580</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated die tests and broke them down into two test">
+      <created>1570681974046</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1570681974046</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +210,9 @@
     <MESSAGE value="test" />
     <MESSAGE value="Fixed the unit testing for player win and dealer win" />
     <MESSAGE value="version 2 of Fixed the unit testing for player win and dealer win" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 2 of Fixed the unit testing for player win and dealer win" />
+    <MESSAGE value="Fixed bug where user does not enter hit or stay and it would just end the game" />
+    <MESSAGE value="Added test to test if player hand can increase if it is not the players turn" />
+    <MESSAGE value="Updated die tests and broke them down into two test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated die tests and broke them down into two test" />
   </component>
 </project>

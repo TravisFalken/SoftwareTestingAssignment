@@ -3,7 +3,7 @@ package nz.ac.eit;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class DieTest {
     private Die die;
@@ -14,8 +14,16 @@ public class DieTest {
     }
 
     @Test
-    public void dieTest_RollDie_ReturnsNumBetween1And6() {
-        boolean result = die.rollDie() >= 1 && die.rollDie() <= 6;
-        assertEquals("rollDie result is not between 1-6", true, result);
+    public void dieTest_RollDie_Does_Not_Return_less_than_1() {
+        int value = die.rollDie();
+        boolean result = value < 1;
+        assertEquals("Die Rolled less than 1 and it should roll between 1 and 6", false,result);
+    }
+
+    @Test
+    public void dieTest_RollDie_Does_Not_Return_Greater_Than_6(){
+        int value = die.rollDie();
+        boolean result = value > 6;
+        assertEquals("Die rolled more than 6 and it should not", false, result);
     }
 }

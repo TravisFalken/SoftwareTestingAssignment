@@ -84,7 +84,7 @@ public class Game {
     }
 
     //Returns player's dice value
-    public int playerDiceValue() {
+    private int playerDiceValue() {
         playerRollValue = 0;
         for(int i = 0; i < dice.size(); i++) {
             playerRollValue += dice.get(i).rollDie();
@@ -93,7 +93,7 @@ public class Game {
     }
 
     //Returns dealer's dice value
-    public int dealerDiceValue() {
+    private int dealerDiceValue() {
         dealerRollValue = 0;
         for(int i = 0; i < dice.size();i++) {
             dealerRollValue += dice.get(i).rollDie();
