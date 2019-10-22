@@ -3,7 +3,7 @@ Requirements:
 - REQ-01. A welcome message will appear as the user starts the game
 - REQ-02. The console will request a username from the user. If the user doesnt enter a name then it defaults to player1.
 - REQ-03. The new user is created and a user created message is sent to the console.
-- REQ-04. 2 numbers are dealt to the player hand and the dealer hand
+- REQ-04. 2 numbers each between 1-6 are dealt to the player hand and the dealer hand
 - REQ-05. Display both the player and dealer hand values
 - REQ-06. Give the user an option of hit or hold
 - REQ-07. If the user hits then another 2 numbers are dealt to the player.
