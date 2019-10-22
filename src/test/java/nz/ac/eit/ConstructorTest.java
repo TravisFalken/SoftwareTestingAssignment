@@ -14,24 +14,24 @@ public class ConstructorTest {
     @Test
     public void playerTest_Construction_True() {
         player = new Player("Timmy Turner");
-        assertThat(player, instanceOf(Player.class));
+        assertThat("Player class is being made and not returning true", player, instanceOf(Player.class));
     }
 
     @Test
     public void dieTest_Construction_True() {
         die = new Die();
-        assertThat(die, instanceOf(Die.class));
+        assertThat("Die class is being made and not returning true", die, instanceOf(Die.class));
     }
 
     @Test
     public void gameTest_Construction_True() {
         game = new Game();
-        assertThat(game, instanceOf(Game.class));
+        assertThat("Game class is being made and not returning true", game, instanceOf(Game.class));
     }
 
     @Test
     public void dealerTest_Construction_True() {
         dealer = new Dealer();
-        assertThat(dealer, instanceOf(Dealer.class));
+        assertThat("Dealer class is being made and not returning true", dealer, instanceOf(Dealer.class));
     }
 }
