@@ -1,4 +1,4 @@
-#Requirements:
+# Requirements:
 - **REQ-01.** A welcome message will appear as the user starts the game
 - **REQ-02.** The console will request a username from the user. If the user doesnt enter a name then it defaults to player1.
 - **REQ-03.** The new user is created and a user created message is sent to the console.
