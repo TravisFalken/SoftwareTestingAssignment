@@ -13,4 +13,6 @@ Requirements:
 - REQ-11. If the users handvalue is > the dealer handvalue then the users wins. You win message displays on the console and the game ends.
 - REQ-12. If the users handvalue is < the dealer handvalue then the dealer wins. You lose message displays on the console and the game ends.
 - REQ-13. If the users handvalue is equal to the dealer handvalue then the dealer wins. You lose message displays on the console and the game ends.
+- REQ-14. If the users handvalue is equal to 21 then the user wins.
+- REQ-15. If the dealers handvalue is equal to 21 then the dealer wins.
 
